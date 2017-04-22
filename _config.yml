@@ -1,0 +1,43 @@
+name: Veselina Terzieva
+description: Making the world a better place
+meta_description: "Veselina Terzieva's personal website"
+
+aboutPage: false
+
+markdown: kramdown
+highlighter: rouge
+
+gems: [jekyll-paginate]
+paginate: 20
+baseurl: /
+domain_name: 'http://www.veselinaterzieva.com'
+google_analytics: 'UA-XXXXXXXX-X'
+disqus: false
+disqus_shortname: 'your-disqus-shortname'
+
+# Details for the RSS feed generator
+url:            'http://www.veselinaterzieva.com'
+author:         'Veselina Terzieva'
+authorTwitter:  ''
+
+permalink:       /:year/:title/
+
+defaults:
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
+    -
+        scope:
+            path: ""
+            type: drafts
+        values:
+            layout: post
